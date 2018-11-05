@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScrollAlphaActivity">
+    <com.example.apple.scrolldemo.views.ObservableAlphaScrollView
+        android:id="@+id/llTest"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_main_topContent"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:background="#b5b433"
+                android:gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:text="我是头部"
+                android:textSize="22sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:src="@mipmap/ic_launcher"
+                android:text="我是内容"
+                android:textSize="22sp" />
+        </LinearLayout>
+    </com.example.apple.scrolldemo.views.ObservableAlphaScrollView>
+    <!-- 背景为透明色很重要 决定了初始化显示的效果-->
+    <LinearLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/ll_header_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:orientation="vertical">
+        <!-- 这里需要加一个top_padding
+             在活动中动态的添加topPadding值来弥补标题栏
+         -->
+        <RelativeLayout
+            android:id="@+id/rlHead"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="我是标题"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
