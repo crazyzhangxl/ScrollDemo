@@ -1,0 +1,4 @@
+滑动冲突解决:
+
+主要针对于NestScrollView 嵌套RecyclerView , 滑动不光滑或者滑不动的问题！！！
+

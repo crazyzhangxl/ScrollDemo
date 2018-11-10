@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.apple.scrolldemo.views.SampleNestedLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StickyNestedActivity">
+    <View
+        android:id="@+id/nsl_header"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    </View>
+
+    <View
+        android:background="@color/colorAccent"
+        android:id="@+id/nsl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+    </View>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:gravity="center"
+                android:text= "内容1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <TextView
+                android:gravity="center"
+                android:text= "内容2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <TextView
+                android:gravity="center"
+                android:text= "内容3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <TextView
+                android:gravity="center"
+                android:text= "内容4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <TextView
+                android:gravity="center"
+                android:text= "内容5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</com.example.apple.scrolldemo.views.SampleNestedLinearLayout>

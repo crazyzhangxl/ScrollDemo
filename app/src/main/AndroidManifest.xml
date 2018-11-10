@@ -22,6 +22,18 @@
         <activity
             android:name=".ScrollAlphaActivity"
             android:theme="@style/chengjin" />
+        <activity
+            android:name=".LikeWChatActivity"
+            android:theme="@style/chengjin" />
+        <activity
+            android:name=".StickyCrimActivity"
+            android:theme="@style/crim" />
+        <activity
+            android:name=".StickyScrollActivity"
+            android:theme="@style/crim" />
+        <activity android:name=".StickyNestedActivity" />
+        <activity android:name=".confict.Nsv_Confict_Rv_Activity"
+            android:label="解决滑动冲突demo"/>
     </application>
 
 </manifest>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.apple.scrolldemo.views.ObservableAlphaScrollView
+        android:focusableInTouchMode="true"
+        android:id="@+id/svContentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:descendantFocusability="blocksDescendants"
+            android:id="@+id/ll_contentView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_headerView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="我是头部布局"
+                android:textSize="30sp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"/>
+            <LinearLayout
+                android:id="@+id/ll_topView"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_topView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="我是内层固定的布局"
+                    android:background="#3be42f"
+                    android:textSize="30sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <com.example.apple.scrolldemo.views.NoConflictRecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </com.example.apple.scrolldemo.views.NoConflictRecyclerView>
+
+        </LinearLayout>
+    </com.example.apple.scrolldemo.views.ObservableAlphaScrollView>
+
+    <!--
+     解决闪烁问题
+     给固定栏外层布局一个固定的高度值即可（与固定栏高度保持一致）
+    -->
+    <LinearLayout
+        android:id="@+id/ll_fixedView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"/>
+
+</FrameLayout>
+
