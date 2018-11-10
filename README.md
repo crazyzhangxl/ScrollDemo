@@ -8,3 +8,7 @@ d.NestScrollView与RecyclerView滑动冲突<br>
 e.未完待续<br><br>
 
 ## 2.demo运行效果展示<br>
+
+## 3.相关博客<br>
+a. [滑动冲突博客地址](https://blog.csdn.net/crazyZhangxl/article/details/81110464)
+
