@@ -11,7 +11,7 @@ import android.widget.Scroller;
 
 /**
  * @author crazyZhangxl on 2018/11/5.
- * Describe: 一个简易的viewPager当然这是很不完善的
+ * Describe: 一个简易的viewPager当然这是很不完善的 主要参考了郭神的效果
  *           主要用于了解 scroller的运用，包括onMeasure() onLayout() 对于子布局的测量和摆放
  */
 public class SampleViewpager  extends ViewGroup{

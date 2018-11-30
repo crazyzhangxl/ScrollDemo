@@ -32,11 +32,44 @@
         android:text="仿微信朋友圈滑动"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <Button
-        android:id="@+id/btnCoor"
-        android:text="coordinator实现标题栏固定"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="2dp"
+            android:background="#ff0000"
+            android:layout_width="2dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:text="固定标题栏样式"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnCoor"
+            android:text="coordinator标题栏固定"
+            android:textAllCaps="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnNormalScroll"
+            android:text="通用的展示界面"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnScroll2"
         android:text="scroll实现标题栏固定"
@@ -48,4 +81,44 @@
         android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_marginLeft="2dp"
+            android:background="#ff0000"
+            android:layout_width="2dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:text="behavior学习"
+            android:textAllCaps="false"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="案例1"
+            android:id="@+id/btnCaseOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="标题案例"
+            android:id="@+id/btnTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="触摸移动"
+            android:id="@+id/btnMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </LinearLayout>

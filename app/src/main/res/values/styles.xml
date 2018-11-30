@@ -12,6 +12,11 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="noTitle" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
     <style name="chengjin" parent="AppTheme">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>

@@ -26,14 +26,25 @@
             android:name=".LikeWChatActivity"
             android:theme="@style/chengjin" />
         <activity
-            android:name=".StickyCrimActivity"
+            android:name=".fixed.StickyCrimActivity"
             android:theme="@style/crim" />
         <activity
-            android:name=".StickyScrollActivity"
+            android:name=".fixed.StickyScrollActivity"
             android:theme="@style/crim" />
-        <activity android:name=".StickyNestedActivity" />
-        <activity android:name=".confict.Nsv_Confict_Rv_Activity"
-            android:label="解决滑动冲突demo"/>
+        <activity android:name=".fixed.StickyNestedActivity" />
+        <activity
+            android:name=".confict.Nsv_Confict_Rv_Activity"
+            android:label="解决滑动冲突demo" />
+        <activity
+            android:name=".fixed.FixedNormalActivity"
+            android:theme="@style/noTitle" />
+        <activity
+            android:name=".behavior.BehaviorOneActivity"
+            android:label="behavior案例1" />
+        <activity
+            android:name=".behavior.BehaviorTitleActivity"
+            android:theme="@style/crim" />
+        <activity android:name=".behavior.BehaviorMoveActivity"></activity>
     </application>
 
 </manifest>

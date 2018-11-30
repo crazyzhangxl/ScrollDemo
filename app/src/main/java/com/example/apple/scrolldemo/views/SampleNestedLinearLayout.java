@@ -27,9 +27,9 @@ import com.example.apple.scrolldemo.R;
 
 /**
  * @author crazyZhangxl on 2018/11/6.
- * Describe: 自定义NestedLinearLayout 继承自NestedScrollingParent
+ * Describe: 自定义NestedLinearLayout 继承自NestedScrollingParent,NestedScrolling系列还有待学习啊
  *            用来处理特定的布局视图
- *            改造自张弘扬大神,但个人觉得这里很不好
+ *            改造自张弘扬大神,但个人觉得这里有一丢问题
  */
 public class SampleNestedLinearLayout extends LinearLayout implements NestedScrollingParent{
     private View nslTitle, nslHeader;

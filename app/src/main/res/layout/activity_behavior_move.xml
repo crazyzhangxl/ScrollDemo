@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".behavior.BehaviorMoveActivity">
+    <com.example.apple.scrolldemo.behavior.MoveView
+        android:background="#f00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        app:layout_behavior="com.example.apple.scrolldemo.behavior.MoveBehavior"
+        android:background="#0f0"
+        android:layout_gravity="top|right"
+        android:text="我依赖Move"
+        android:gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+</android.support.design.widget.CoordinatorLayout>

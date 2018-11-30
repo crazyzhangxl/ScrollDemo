@@ -1,21 +1,17 @@
-package com.example.apple.scrolldemo;
+package com.example.apple.scrolldemo.fixed;
 
-import android.graphics.Color;
-import android.support.v4.widget.NestedScrollView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
-import android.view.View;
-import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-import com.example.apple.scrolldemo.views.NoConflictRecyclerView;
+import com.example.apple.scrolldemo.R;
 import com.example.apple.scrolldemo.views.ObservableAlphaScrollView;
 
 import java.util.ArrayList;

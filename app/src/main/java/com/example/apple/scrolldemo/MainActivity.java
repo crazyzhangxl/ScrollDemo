@@ -3,13 +3,17 @@ package com.example.apple.scrolldemo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.LinearLayout;
 
+import com.example.apple.scrolldemo.behavior.BehaviorMoveActivity;
+import com.example.apple.scrolldemo.behavior.BehaviorOneActivity;
+import com.example.apple.scrolldemo.behavior.BehaviorTitleActivity;
 import com.example.apple.scrolldemo.confict.Nsv_Confict_Rv_Activity;
+import com.example.apple.scrolldemo.fixed.FixedNormalActivity;
+import com.example.apple.scrolldemo.fixed.StickyCrimActivity;
+import com.example.apple.scrolldemo.fixed.StickyNestedActivity;
+import com.example.apple.scrolldemo.fixed.StickyScrollActivity;
 
 /**
  * @author crazyZhangxl on 2018-11-1 19:42:28.
@@ -59,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btnNormalScroll).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FixedNormalActivity.class));
+            }
+        });
+
         findViewById(R.id.nested).setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,6 +81,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Nsv_Confict_Rv_Activity.class));
+            }
+        });
+
+        findViewById(R.id.btnCaseOne).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BehaviorOneActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnTitle).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BehaviorTitleActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnMove).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BehaviorMoveActivity.class));
             }
         });
 

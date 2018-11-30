@@ -1,7 +1,9 @@
-package com.example.apple.scrolldemo;
+package com.example.apple.scrolldemo.fixed;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.apple.scrolldemo.R;
 
 /**
  * @author crazyZhangxl on 2018-11-5 21:04:10.
