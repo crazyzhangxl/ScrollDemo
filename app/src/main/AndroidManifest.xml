@@ -44,7 +44,12 @@
         <activity
             android:name=".behavior.BehaviorTitleActivity"
             android:theme="@style/crim" />
-        <activity android:name=".behavior.BehaviorMoveActivity"></activity>
+        <activity android:name=".behavior.BehaviorMoveActivity" />
+        <activity
+            android:name=".recycle.MulRvOneActivity"
+            android:label="多布局仿聊天" />
+        <activity android:name=".recycle.city.MulCityActivity"
+            android:label="多布局城市选择"/>
     </application>
 
 </manifest>

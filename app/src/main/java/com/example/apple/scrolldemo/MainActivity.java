@@ -14,6 +14,10 @@ import com.example.apple.scrolldemo.fixed.FixedNormalActivity;
 import com.example.apple.scrolldemo.fixed.StickyCrimActivity;
 import com.example.apple.scrolldemo.fixed.StickyNestedActivity;
 import com.example.apple.scrolldemo.fixed.StickyScrollActivity;
+import com.example.apple.scrolldemo.recycle.MulRvOneActivity;
+import com.example.apple.scrolldemo.recycle.city.MulCityActivity;
+
+import java.util.Map;
 
 /**
  * @author crazyZhangxl on 2018-11-1 19:42:28.
@@ -102,6 +106,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, BehaviorMoveActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnRvOne).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MulRvOneActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnCity).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MulCityActivity.class));
             }
         });
 

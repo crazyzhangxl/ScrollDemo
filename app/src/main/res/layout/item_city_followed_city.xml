@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="4dp"
+    android:layout_height="120dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+
+    <View
+        android:id="@+id/hover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4Cffffff"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/city_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            />
+
+        <TextView
+            android:id="@+id/city_status"
+            android:layout_below="@+id/city_temp"
+            android:drawablePadding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="#fff"
+            />
+
+        <TextView
+            android:id="@+id/city_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:drawablePadding="4dp"
+            android:layout_alignParentRight="true"
+            android:textSize="13sp"
+            android:padding="6dp"
+            android:textColor="#fff"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:padding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checked"
+        android:visibility="gone"
+        android:src="@mipmap/ic_city_checked"
+        />
+
+    <ImageView
+        android:id="@+id/delete"
+        android:layout_gravity="right"
+        android:padding="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:src="@mipmap/ic_trash"
+        />
+
+
+</FrameLayout>
