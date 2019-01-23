@@ -15,7 +15,9 @@ import com.example.apple.scrolldemo.fixed.StickyCrimActivity;
 import com.example.apple.scrolldemo.fixed.StickyNestedActivity;
 import com.example.apple.scrolldemo.fixed.StickyScrollActivity;
 import com.example.apple.scrolldemo.recycle.MulRvOneActivity;
+import com.example.apple.scrolldemo.recycle.WebchatListActivity;
 import com.example.apple.scrolldemo.recycle.city.MulCityActivity;
+import com.example.apple.scrolldemo.recycle.grid.GridTextActivity;
 
 import java.util.Map;
 
@@ -120,6 +122,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MulCityActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnAppbar).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,AppBarScrollActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnWebchat).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, WebchatListActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnGrid).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, GridTextActivity.class));
             }
         });
 

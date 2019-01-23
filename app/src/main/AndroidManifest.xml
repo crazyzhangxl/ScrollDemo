@@ -48,8 +48,16 @@
         <activity
             android:name=".recycle.MulRvOneActivity"
             android:label="多布局仿聊天" />
-        <activity android:name=".recycle.city.MulCityActivity"
-            android:label="多布局城市选择"/>
+        <activity
+            android:name=".recycle.city.MulCityActivity"
+            android:label="多布局城市选择" />
+        <activity
+            android:name=".AppBarScrollActivity"
+            android:theme="@style/noTitle" />
+        <activity
+            android:name=".recycle.WebchatListActivity"
+            android:label="微信好友列表" />
+        <activity android:name=".recycle.grid.GridTextActivity"></activity>
     </application>
 
 </manifest>

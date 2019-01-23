@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvIndex"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#E5E5E5"
+        android:gravity="center_vertical"
+        android:paddingLeft="12.5dp"
+        android:text="A"
+        android:textColor="#989898"
+        android:textSize="12.5dp"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:paddingLeft="12.5dp"
+        android:paddingRight="12.5dp"
+        android:paddingTop="7.5dp"
+        android:paddingBottom="7.5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+        <RelativeLayout
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_centerVertical="true"
+                android:text="我是谁"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:id="@+id/line"
+                android:background="#D2D2D2"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
