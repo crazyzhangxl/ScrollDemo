@@ -15,7 +15,7 @@ d.自定义adapter添加头部尾部效果
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;![image](https://github.com/crazyzhangxl/ScrollDemo/blob/master/app/sreenshoots/no_confict.gif)
 &#160;&#160;&#160;&#160;&#160;&#160;![image](https://github.com/crazyzhangxl/ScrollDemo/blob/master/app/sreenshoots/多布局_头部.png)<br>
 ## 3.相关博客<br>
-a. [滑动冲突博客地址](https://blog.csdn.net/crazyZhangxl/article/details/81110464)
+a. [滑动冲突博客地址](https://blog.csdn.net/crazyZhangxl/article/details/81110464)<br>
 b. [rv相关技巧](https://blog.csdn.net/crazyZhangxl/article/details/81407133)
 
 
