@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * Created by apple on 2019-11-15.
- * description:
+ * description:自定义adapter
  */
 public  abstract class ZxlRecyclerAdapter<B,V extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<V> {
 
@@ -75,5 +75,4 @@ public  abstract class ZxlRecyclerAdapter<B,V extends RecyclerView.ViewHolder> e
             mZxlHeadWithFooterAdapter.notifyDataSetChanged();
         }
     }
-
 }
