@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".base.MoveActivity">
+    <FrameLayout
+        android:id="@+id/llParent"
+        android:layout_margin="10dp"
+        android:background="#eee"
+        android:layout_width="350dp"
+        android:layout_height="200dp">
+        <View
+            android:id="@+id/viewChild"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f00"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </FrameLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="起始描述: 父亲布局为灰色 内部含有一个距离左上各10dp的布局"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLeft"
+            android:text="向左10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnTop"
+            android:text="向上10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnRight"
+            android:text="向右10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnBottom"
+            android:text="向下10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnAnimator"
+            android:text="动画右100,下100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="(50,50)"
+            android:id="@+id/btnScrollOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:text="(-50,-50)"
+            android:id="@+id/btnScrollTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="setTranslationY(-50)"
+            android:textAllCaps="false"
+            android:id="@+id/translationYOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="setTranslationY(50)"
+            android:textAllCaps="false"
+            android:id="@+id/translationYTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="结果"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="暂时结论 =  view.getX() = view.getLeft()+view.getTranslationX()"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

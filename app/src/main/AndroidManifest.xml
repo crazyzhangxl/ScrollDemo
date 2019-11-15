@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".recycle.ding.DingActivity"></activity>
+        <activity android:name=".confict.RecvActivity" />
+        <activity
+            android:name=".confict.NormalNestedActivity"
+            android:label="普通嵌套" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -57,7 +62,14 @@
         <activity
             android:name=".recycle.WebchatListActivity"
             android:label="微信好友列表" />
-        <activity android:name=".recycle.grid.GridTextActivity"></activity>
+        <activity android:name=".recycle.grid.GridTextActivity" />
+        <activity
+            android:name=".base.ScrollShowActivity"
+            android:label="滑动展示" />
+        <activity android:name=".base.MoveActivity" />
+        <activity
+            android:name=".LocationActivity"
+            android:theme="@style/noTitle" />
     </application>
 
 </manifest>

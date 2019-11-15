@@ -39,10 +39,7 @@ public class ScrollAwareFABBehavior extends FloatingActionButton.Behavior {
      */
     public ScrollAwareFABBehavior(Context context, AttributeSet attrs) {
         super();
-        if (mMessage == null){
-            mMessage = new BottomUpdateMessage();
-        }
-
+        mMessage = new BottomUpdateMessage();
     }
 
     @Override

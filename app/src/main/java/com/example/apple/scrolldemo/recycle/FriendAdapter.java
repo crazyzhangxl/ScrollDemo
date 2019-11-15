@@ -1,5 +1,6 @@
 package com.example.apple.scrolldemo.recycle;
 
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.view.View;
@@ -24,6 +25,12 @@ public class FriendAdapter extends BaseQuickAdapter<FriendBean,BaseViewHolder>{
         mFriendBeanList = data;
     }
 
+    // 局部刷新...
+    @Override
+    protected void convertPayloads(@NonNull BaseViewHolder helper, FriendBean item, @NonNull List<Object> payloads) {
+        super.convertPayloads(helper, item, payloads);
+    }
+
     @Override
     protected void convert(BaseViewHolder helper, FriendBean item) {
         helper.setText(R.id.tvUserName,item.getName());
@@ -31,6 +38,7 @@ public class FriendAdapter extends BaseQuickAdapter<FriendBean,BaseViewHolder>{
         String nowSpelling = item.getNameSpelling();
         TextView tvIndex = helper.getView(R.id.tvIndex);
         View viewLine = helper.getView(R.id.line);
+
         String index = "";
         if (position == 0){
             index = nowSpelling;

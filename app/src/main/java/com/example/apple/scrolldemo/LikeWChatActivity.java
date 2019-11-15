@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.apple.scrolldemo.views.ObservableAlphaScrollView;

@@ -41,11 +41,15 @@ public class StickyScrollActivity extends AppCompatActivity implements Observabl
             @Override
             public void onGlobalLayout() {
                 mLLTopView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                topViewHeight = mTvHeadView.getMeasuredHeight();
-                mNestedScrollView.setOnAlphaScrollChangeListener(StickyScrollActivity.this);
-                Log.e("result onGlobalLayout",topViewHeight+"");
+                //topViewHeight = mTvHeadView.getMeasuredHeight();
+                topViewHeight = mLLTopView.getTop();
+                // 应该要活用坐标和宽高
+                // 测量高度,然后在滑动过程进行显示和隐藏即可达到效果
+                Log.e("距离顶部", topViewHeight+"" );
+                Log.e("result onGlobalLayout",mTvHeadView.getMeasuredHeight()+"");
             }
         });
+        mNestedScrollView.setOnAlphaScrollChangeListener(StickyScrollActivity.this);
     }
 
 

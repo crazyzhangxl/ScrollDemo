@@ -57,7 +57,9 @@ public class SampleViewpager  extends ViewGroup{
             for (int i=0;i<getChildCount();i++){
                 View child = getChildAt(i);
                 // 水平摆放
-                child.layout(i*child.getMeasuredWidth(),0,(i+1)*child.getMeasuredWidth(),child.getMeasuredHeight());
+                child.layout(i*child.getMeasuredWidth(),
+                        0,
+                        (i+1)*child.getMeasuredWidth(),child.getMeasuredHeight());
             }
         }
     }

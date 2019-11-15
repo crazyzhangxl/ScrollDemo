@@ -23,17 +23,76 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <Button
+                    android:text="滑动2"
+                    android:id="@+id/btnScrollBase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnMoveTwo"
+                    android:text="平移"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:background="#f00"
+                    android:layout_width="2dp"
+                    android:layout_height="16dp"/>
+                <TextView
+                    android:layout_marginLeft="12dp"
+                    android:text="性能考虑"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
                     android:id="@+id/btnConflict"
                     android:text="嵌套冲突"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnNest"
+                    android:text="普通嵌套"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/rvHead"
+                    android:text="rv添加头部"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
                 <Button
                     android:id="@+id/btnAppbar"
                     android:text="AppBar滑动"
                     android:textAllCaps="false"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
+                <Button
+                    android:text="location"
+                    android:textAllCaps="false"
+                    android:id="@+id/btnLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
+
+
 
             <Button
                 android:id="@+id/btnScroll"
@@ -187,6 +246,16 @@
                 android:gravity="center"
                 android:layout_width="300dp"
                 android:layout_height="50dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnDing"
+                    android:text="仿丁丁首页"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
         </LinearLayout>
 
 

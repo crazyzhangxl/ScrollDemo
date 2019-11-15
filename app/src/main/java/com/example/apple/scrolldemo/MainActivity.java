@@ -6,10 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import com.example.apple.scrolldemo.base.MoveActivity;
+import com.example.apple.scrolldemo.base.ScrollShowActivity;
 import com.example.apple.scrolldemo.behavior.BehaviorMoveActivity;
 import com.example.apple.scrolldemo.behavior.BehaviorOneActivity;
 import com.example.apple.scrolldemo.behavior.BehaviorTitleActivity;
+import com.example.apple.scrolldemo.confict.NormalNestedActivity;
 import com.example.apple.scrolldemo.confict.Nsv_Confict_Rv_Activity;
+import com.example.apple.scrolldemo.confict.RecvActivity;
 import com.example.apple.scrolldemo.fixed.FixedNormalActivity;
 import com.example.apple.scrolldemo.fixed.StickyCrimActivity;
 import com.example.apple.scrolldemo.fixed.StickyNestedActivity;
@@ -17,6 +21,7 @@ import com.example.apple.scrolldemo.fixed.StickyScrollActivity;
 import com.example.apple.scrolldemo.recycle.MulRvOneActivity;
 import com.example.apple.scrolldemo.recycle.WebchatListActivity;
 import com.example.apple.scrolldemo.recycle.city.MulCityActivity;
+import com.example.apple.scrolldemo.recycle.ding.DingActivity;
 import com.example.apple.scrolldemo.recycle.grid.GridTextActivity;
 
 import java.util.Map;
@@ -38,6 +43,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,BasicScrollActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnScrollBase).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ScrollShowActivity.class));
             }
         });
 
@@ -143,6 +155,42 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, GridTextActivity.class));
+            }
+        });
+
+
+        findViewById(R.id.btnMoveTwo).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MoveActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnLocation).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,LocationActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnNest).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                NormalNestedActivity.show(MainActivity.this);
+            }
+        });
+
+        findViewById(R.id.rvHead).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RecvActivity.show(MainActivity.this);
+            }
+        });
+
+        findViewById(R.id.btnDing).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DingActivity.show(MainActivity.this);
             }
         });
 

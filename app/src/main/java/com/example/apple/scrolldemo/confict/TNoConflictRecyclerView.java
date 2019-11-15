@@ -34,6 +34,15 @@ public class TNoConflictRecyclerView extends RecyclerView {
         Log.e(TAG,"最小滑动距离  mTouchSlop = "+mTouchSlop);
     }
 
+
+    /**
+     * 思路
+     *
+     * 当rv位于顶部：
+     *
+     * @param ev
+     * @return
+     */
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         switch (ev.getAction())
@@ -48,8 +57,7 @@ public class TNoConflictRecyclerView extends RecyclerView {
                 float x = endX - mStartX;
                 float y = endY - mStartY;
                 /* 左右滑动不拦截,上下滑动拦截*/
-                if (Math.abs(y) > Math.abs(x))
-                {
+                if (Math.abs(y) > Math.abs(x)) {
                     Log.e(TAG,"dispatchTouchEvent  y = "+y);
                     /* 已经在顶部了*/
                     if (y > mTouchSlop && !canScrollVertically(-1)){
@@ -60,6 +68,8 @@ public class TNoConflictRecyclerView extends RecyclerView {
                     }else {
                         getParent().requestDisallowInterceptTouchEvent(true);
                     }
+
+
                 }else {
                     getParent().requestDisallowInterceptTouchEvent(false);
                 }

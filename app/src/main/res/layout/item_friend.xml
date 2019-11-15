@@ -15,7 +15,7 @@
         android:text="A"
         android:textColor="#989898"
         android:textSize="12.5dp"
-        android:visibility="gone"/>
+        android:visibility="visible"/>
     <LinearLayout
         android:paddingLeft="12.5dp"
         android:paddingRight="12.5dp"

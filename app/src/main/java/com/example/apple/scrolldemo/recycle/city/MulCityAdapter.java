@@ -3,6 +3,7 @@ package com.example.apple.scrolldemo.recycle.city;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.widget.RecyclerView;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.ImageView;
@@ -56,6 +57,11 @@ public class MulCityAdapter extends BaseMultiItemQuickAdapter<MulCityBean,BaseVi
     private void initDrawable() {
         mDrawableLocation = ContextCompat.getDrawable(context,R.mipmap.ic_location);
         mDrawableLocation.setBounds(0,0,dpToPx(context,14),dpToPx(context,14));
+    }
+
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        super.onAttachedToRecyclerView(recyclerView);
     }
 
     @Override
