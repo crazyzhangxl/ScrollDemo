@@ -12,7 +12,7 @@ d.自定义adapter添加头部尾部效果
 ## 2.demo运行效果展示<br>
 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;![image](https://github.com/crazyzhangxl/ScrollDemo/blob/master/app/sreenshoots/多布局--城市.png)
 &#160;&#160;&#160;&#160;&#160;&#160;![image](https://github.com/crazyzhangxl/ScrollDemo/blob/master/app/sreenshoots/微信朋友列表.png)<br>
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;![image](https://github.com/crazyzhangxl/ScrollDemo/blob/master/app/sreenshoots/no_confict.png)
+&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;![image](https://github.com/crazyzhangxl/ScrollDemo/blob/master/app/sreenshoots/no_confict.gif)
 &#160;&#160;&#160;&#160;&#160;&#160;![image](https://github.com/crazyzhangxl/ScrollDemo/blob/master/app/sreenshoots/多布局_头部.png)<br>
 ## 3.相关博客<br>
 a. [滑动冲突博客地址](https://blog.csdn.net/crazyZhangxl/article/details/81110464)
