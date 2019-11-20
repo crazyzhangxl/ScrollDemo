@@ -5,9 +5,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".confict.RecvActivity">
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:background="#f00"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <View
+                android:background="#0f0"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+            <View
+                android:background="#0f0"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+            <View
+                android:background="#f00"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
 </android.support.constraint.ConstraintLayout>

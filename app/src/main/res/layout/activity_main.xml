@@ -64,12 +64,18 @@
                     android:layout_height="wrap_content" />
                 <Button
                     android:id="@+id/btnNest"
-                    android:text="普通嵌套"
+                    android:text="嵌套-同方向"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <Button
                     android:id="@+id/rvHead"
-                    android:text="rv添加头部"
+                    android:text="嵌套-不同方向"
+                    android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/rv_rv"
+                    android:text="rv嵌套"
                     android:textAllCaps="false"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
@@ -141,12 +147,22 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnScroll2"
+                    android:text="scroll实现标题栏固定"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/review"
+                    android:text="固定回顾"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btnScroll2"
-                android:text="scroll实现标题栏固定"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/nested"
                 android:text="btnNestScrolling实现"
@@ -253,6 +269,11 @@
                 <Button
                     android:id="@+id/btnDing"
                     android:text="仿丁丁首页"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnRefresh"
+                    android:text="刷新"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>

@@ -35,20 +35,19 @@ public class RecvActivity extends AppCompatActivity {
     private void initView() {
         mRvConflict = findViewById(R.id.recyclerView);
         LinearLayoutManager manager =
-                new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+                new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         mRvConflict.setLayoutManager(manager);
-        BaseQuickAdapter<String, BaseViewHolder> baseQuickAdapter = new BaseQuickAdapter<String, BaseViewHolder>(R.layout.item_scroll, mData) {
-            @Override
-            protected void convert(BaseViewHolder helper, String item) {
-                Log.e("性能", "加载了"+helper.getAdapterPosition() );
-                helper.setText(R.id.tv, item);
-            }
-        };
-        mRvConflict.setAdapter(baseQuickAdapter);
+
+        manager.setSmoothScrollbarEnabled(true);
+        manager.setAutoMeasureEnabled(true);
+//取消recycleview的滑动
+        mRvConflict.setHasFixedSize(true);
+        mRvConflict.setNestedScrollingEnabled(false);
+        mRvConflict.setAdapter(new PicTextAdapter(mData,RecvActivity.this));
     }
     private void initData() {
         for (int i=0;i<80;i++){
-            mData.add("每天进步一点点-.-"+i);
+            mData.add("数据信息"+i);
         }
     }
 }

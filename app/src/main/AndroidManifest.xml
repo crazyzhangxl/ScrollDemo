@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".recycle.ding.DingActivity"></activity>
+        <activity android:name=".confict.Rv_contains_rvActivity"></activity>
+        <activity android:name=".refresh.RefreshListActivity" />
+        <activity
+            android:name=".fixed.review.RecycleFixedActivity"
+            android:label="头部固定回顾" />
+        <activity android:name=".recycle.ding.DingActivity" />
         <activity android:name=".confict.RecvActivity" />
         <activity
             android:name=".confict.NormalNestedActivity"

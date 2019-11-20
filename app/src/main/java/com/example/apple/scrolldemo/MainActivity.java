@@ -3,6 +3,7 @@ package com.example.apple.scrolldemo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 import android.view.View.OnClickListener;
 
@@ -14,15 +15,18 @@ import com.example.apple.scrolldemo.behavior.BehaviorTitleActivity;
 import com.example.apple.scrolldemo.confict.NormalNestedActivity;
 import com.example.apple.scrolldemo.confict.Nsv_Confict_Rv_Activity;
 import com.example.apple.scrolldemo.confict.RecvActivity;
+import com.example.apple.scrolldemo.confict.Rv_contains_rvActivity;
 import com.example.apple.scrolldemo.fixed.FixedNormalActivity;
 import com.example.apple.scrolldemo.fixed.StickyCrimActivity;
 import com.example.apple.scrolldemo.fixed.StickyNestedActivity;
 import com.example.apple.scrolldemo.fixed.StickyScrollActivity;
+import com.example.apple.scrolldemo.fixed.review.RecycleFixedActivity;
 import com.example.apple.scrolldemo.recycle.MulRvOneActivity;
 import com.example.apple.scrolldemo.recycle.WebchatListActivity;
 import com.example.apple.scrolldemo.recycle.city.MulCityActivity;
 import com.example.apple.scrolldemo.recycle.ding.DingActivity;
 import com.example.apple.scrolldemo.recycle.grid.GridTextActivity;
+import com.example.apple.scrolldemo.refresh.RefreshListActivity;
 
 import java.util.Map;
 
@@ -191,6 +195,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 DingActivity.show(MainActivity.this);
+            }
+        });
+
+        findViewById(R.id.review).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RecycleFixedActivity.show(MainActivity.this);
+            }
+        });
+
+        findViewById(R.id.btnRefresh).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RefreshListActivity.show(MainActivity.this);
+            }
+        });
+
+        findViewById(R.id.rv_rv).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Rv_contains_rvActivity.show(MainActivity.this);
             }
         });
 

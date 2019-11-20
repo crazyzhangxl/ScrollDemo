@@ -2,3 +2,8 @@
 
 主要针对于NestScrollView 嵌套RecyclerView , 滑动不光滑或者滑不动的问题！！！
 
+嵌套问题分析:
+
+NestedScrollView嵌套RecyclerView 竖直方向与水平方向
+RecyclerView嵌套RecyclerView
+
