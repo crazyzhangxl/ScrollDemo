@@ -25,11 +25,16 @@ public class FriendAdapter extends BaseQuickAdapter<FriendBean,BaseViewHolder>{
         mFriendBeanList = data;
     }
 
+    public List<FriendBean> getFriendBeanList() {
+        return mFriendBeanList;
+    }
+
     // 局部刷新...
     @Override
     protected void convertPayloads(@NonNull BaseViewHolder helper, FriendBean item, @NonNull List<Object> payloads) {
         super.convertPayloads(helper, item, payloads);
     }
+
 
     @Override
     protected void convert(BaseViewHolder helper, FriendBean item) {

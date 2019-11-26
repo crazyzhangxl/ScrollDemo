@@ -12,6 +12,7 @@ import com.example.apple.scrolldemo.base.ScrollShowActivity;
 import com.example.apple.scrolldemo.behavior.BehaviorMoveActivity;
 import com.example.apple.scrolldemo.behavior.BehaviorOneActivity;
 import com.example.apple.scrolldemo.behavior.BehaviorTitleActivity;
+import com.example.apple.scrolldemo.center.ItemCenterActivity;
 import com.example.apple.scrolldemo.confict.NormalNestedActivity;
 import com.example.apple.scrolldemo.confict.Nsv_Confict_Rv_Activity;
 import com.example.apple.scrolldemo.confict.RecvActivity;
@@ -21,6 +22,8 @@ import com.example.apple.scrolldemo.fixed.StickyCrimActivity;
 import com.example.apple.scrolldemo.fixed.StickyNestedActivity;
 import com.example.apple.scrolldemo.fixed.StickyScrollActivity;
 import com.example.apple.scrolldemo.fixed.review.RecycleFixedActivity;
+import com.example.apple.scrolldemo.item_decoration.activities.DecorationGroupActivity;
+import com.example.apple.scrolldemo.nestedscroll.SimpleRecvActivity;
 import com.example.apple.scrolldemo.recycle.MulRvOneActivity;
 import com.example.apple.scrolldemo.recycle.WebchatListActivity;
 import com.example.apple.scrolldemo.recycle.city.MulCityActivity;
@@ -216,6 +219,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Rv_contains_rvActivity.show(MainActivity.this);
+            }
+        });
+
+        findViewById(R.id.btnGroupDecoration).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DecorationGroupActivity.show(MainActivity.this);
+            }
+        });
+
+        findViewById(R.id.btnNormal).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SimpleRecvActivity.class));
+            }
+        });
+
+        findViewById(R.id.btnCenter).setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ItemCenterActivity.class));
             }
         });
 

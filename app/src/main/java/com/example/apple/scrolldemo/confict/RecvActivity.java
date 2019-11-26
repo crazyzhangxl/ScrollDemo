@@ -44,6 +44,7 @@ public class RecvActivity extends AppCompatActivity {
         mRvConflict.setHasFixedSize(true);
         mRvConflict.setNestedScrollingEnabled(false);
         mRvConflict.setAdapter(new PicTextAdapter(mData,RecvActivity.this));
+
     }
     private void initData() {
         for (int i=0;i<80;i++){

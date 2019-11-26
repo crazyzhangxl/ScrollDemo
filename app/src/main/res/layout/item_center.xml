@@ -8,8 +8,8 @@
         android:id="@+id/tvText"
         android:text="你是谁"
         android:gravity="center"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
         android:layout_gravity="center_vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

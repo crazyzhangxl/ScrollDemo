@@ -80,6 +80,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnNormal"
+                    android:text="普通布局"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -245,14 +257,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <Button
-                    android:id="@+id/btnWebchat"
-                    android:text="微信"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <Button
                     android:id="@+id/btnGrid"
                     android:text="grid布局"
                     android:textAllCaps="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:text="分组效果"
+                android:textColor="#f00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnWebchat"
+                    android:text="微信-联系人"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:text="分割线-分组"
+                    android:id="@+id/btnGroupDecoration"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -274,6 +305,12 @@
                 <Button
                     android:id="@+id/btnRefresh"
                     android:text="刷新"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btnCenter"
+                    android:text="item居中"
+                    android:textAllCaps="false"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
             </LinearLayout>
